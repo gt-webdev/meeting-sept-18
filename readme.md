@@ -10,8 +10,8 @@ All we need for this is Ruby and Sinatra. You should have Sinatra installed from
 
 Clone the repo and run the files! It's that easy
 
-    git clone https://github.com/gt-webdev/meeting-sept-11
-    cd meeting-sept-11
+    git clone https://github.com/gt-webdev/meeting-sept-18
+    cd meeting-sept-18
     ruby dinner.rb
     
 ## Routes and HTTP request methods
