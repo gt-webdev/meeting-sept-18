@@ -1,6 +1,6 @@
 require 'sinatra'
 
-food = ['chocolate', 'tv dinner', 'cereal', 'hot dogs', 'veal', 'pizza']
+$food = ['chocolate', 'tv dinner', 'cereal', 'hot dogs', 'veal', 'pizza']
 
 get '/dinner' do
   dinner
@@ -13,15 +13,15 @@ get '/add_dinner' do
   <input type="submit">
 </form>
 
-#{food}
+#{$food}
   FORM
 end
 
 post '/add_dinner' do
-  food << params[:dinner]
+  $food << params[:dinner]
   redirect to('/add_dinner')
 end
 
 def dinner
-  food[rand(food.size)]
+  $food[rand($food.size)]
 end
